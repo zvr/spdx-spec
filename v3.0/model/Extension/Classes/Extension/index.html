@@ -58,6 +58,10 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../serializations/">Model and serializations</a>
+</li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../bibliography/">Bibliography</a>
 </li>
 </ul>
@@ -271,6 +275,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#">Individuals</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Core/Individuals/NoAssertionElement/">NoAssertionElement</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Core/Individuals/NoneElement/">NoneElement</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#">Software</a>
@@ -279,6 +291,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Software/Classes/ContentIdentifier/">ContentIdentifier</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Classes/File/">File</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Classes/Package/">Package</a>
@@ -299,13 +313,19 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/byteRange/">byteRange</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/contentIdentifier/">contentIdentifier</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/contentIdentifierType/">contentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/contentIdentifierValue/">contentIdentifierValue</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/contentType/">contentType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/copyrightText/">copyrightText</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/downloadLocation/">downloadLocation</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/gitoid/">Gitoid</a>
+<li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/fileKind/">fileKind</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Properties/homePage/">homePage</a>
 </li>
@@ -329,6 +349,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Software/Vocabularies/ContentIdentifierType/">ContentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Software/Vocabularies/FileKindType/">FileKindType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Vocabularies/SbomType/">SbomType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Software/Vocabularies/SoftwarePurpose/">SoftwarePurpose</a>
@@ -551,6 +575,8 @@
 <ul>
 <li class="toctree-l3"><a class="" href="../../../Dataset/Classes/Dataset.md">None</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Classes/DatasetPackage/">DatasetPackage</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -572,6 +598,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/datasetType/">datasetType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/datasetUpdateMechanism/">datasetUpdateMechanism</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/hasSensitivePersonalInformation/">hasSensitivePersonalInformation</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/intendedUse/">intendedUse</a>
 </li>
@@ -603,6 +631,10 @@
 <ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Classes/AIPackage/">AIPackage</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Classes/EnergyConsumption/">EnergyConsumption</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Classes/EnergyConsumptionDescription/">EnergyConsumptionDescription</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -613,7 +645,15 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/energyConsumption/">energyConsumption</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/energyQuantity/">energyQuantity</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/energyUnit/">energyUnit</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/finetuningEnergyConsumption/">finetuningEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/hyperparameter/">Hyperparameter</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/inferenceEnergyConsumption/">inferenceEnergyConsumption</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/informationAboutApplication/">informationAboutApplication</a>
 </li>
@@ -635,12 +675,18 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/standardCompliance/">standardCompliance</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/trainingEnergyConsumption/">trainingEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/typeOfModel/">typeOfModel</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/useSensitivePersonalInformation/">useSensitivePersonalInformation</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Vocabularies/EnergyUnitType/">EnergyUnitType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Vocabularies/SafetyRiskAssessmentType/">SafetyRiskAssessmentType</a>
 </li>
 </ul>
@@ -693,6 +739,10 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Classes</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../CdxPropertiesExtension/">CdxPropertiesExtension</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../CdxPropertyEntry/">CdxPropertyEntry</a>
+</li>
 <li class="toctree-l3 current"><a class="reference internal current" href="./">Extension</a>
 <ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a>
@@ -701,9 +751,17 @@
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#metadata">Metadata</a>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a>
+</ul>
 </li>
 </ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/cdxPropName/">cdxPropName</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/cdxPropValue/">cdxPropValue</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/cdxProperty/">cdxProperty</a>
 </li>
 </ul>
 </li>
@@ -714,11 +772,19 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/diffs-from-previous-editions/">Diffs from Previous Editions</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/getting-started/">Getting started with SPDX 3</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/RDF-object-model-and-identifier-syntax/">RDF Object Model and Identifier Syntax</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/SPDX-license-expressions/">SPDX License Expressions</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/using-SPDX-short-identifiers-in-source-files/">Using SPDX short identifiers in Source Files</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/using-SPDX-to-comply-with-industry-guidance/">Using SPDX to comply with norms, standards and regulation</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/including-security-information-in-SPDX/">Including Security Information in SPDX</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/SPDX-Lite/">SPDX Lite</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">licenses</span></p>
@@ -751,7 +817,7 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<!-- Automatically generated by spec-parser v2.0.0 on 2024-04-11T20:44:04.541701+00:00 -->
+<!-- Automatically generated by spec-parser v2.1.0 on 2024-05-08T19:53:19.187587+00:00 -->
 <!-- SPDX-License-Identifier: Community-Spec-1.0 -->
 <h1 id="extension">Extension</h1>
 <h2 id="summary">Summary</h2>
@@ -761,13 +827,21 @@
 <p>Rather than being associated with a particular Element through the typical use of a purpose-specific object property an Extension is associated with the Element it characterizes using a single common generalized object property.</p>
 <p>This approach serves multiple purposes:</p>
 <ol>
-<li><strong>Support profile-based extended characterization of Elements.</strong> Enables specification and expression of Element characterization extensions within any profile and namespace of SPDX without requiring changes to other profiles or namespaces and without requiring local subclassing of remote classes (which could inhibit ecosystem interoperability in some cases).</li>
-<li><strong>Support extension of SPDX by adopting individuals or communities with Element characterization details uniquely specialized to their particular context.</strong> Enables adopting individuals or communities to utilize SPDX expressive capabilities along with expressing more arcane Element characterization details specific to them and not appropriate for standardization across SPDX.</li>
-<li><strong>Support structured capture of expressive solutions for gaps in SPDX coverage from real-world use.</strong> Enables adopting individuals or communities to express Element characterization details they require that are not currently defined in SPDX but likely should be. Enables a practical pipeline that</li>
-<li>identifies gaps in SPDX that should be filled, </li>
+<li>
+<p><strong>Support profile-based extended characterization of Elements.</strong> Enables specification and expression of Element characterization extensions within any profile and namespace of SPDX without requiring changes to other profiles or namespaces and without requiring local subclassing of remote classes (which could inhibit ecosystem interoperability in some cases).</p>
+</li>
+<li>
+<p><strong>Support extension of SPDX by adopting individuals or communities with Element characterization details uniquely specialized to their particular context.</strong> Enables adopting individuals or communities to utilize SPDX expressive capabilities along with expressing more arcane Element characterization details specific to them and not appropriate for standardization across SPDX.</p>
+</li>
+<li>
+<p><strong>Support structured capture of expressive solutions for gaps in SPDX coverage from real-world use.</strong> Enables adopting individuals or communities to express Element characterization details they require that are not currently defined in SPDX but likely should be. Enables a practical pipeline that</p>
+<ul>
+<li>identifies gaps in SPDX that should be filled,</li>
 <li>expresses solutions to those gaps in a way that allows the identifying adopters to use the extended solutions with SPDX and does not conflict with current SPDX,</li>
 <li>can be clearly detected among the SPDX content exchange ecosystem,</li>
 <li>provides a clear and structured definition of gap solution that can be used as submission for revision to SPDX standard</li>
+</ul>
+</li>
 </ol>
 <h2 id="metadata">Metadata</h2>
 <p><code>https://spdx.org/rdf/3.0.0/terms/Extension/Extension</code></p>
@@ -789,30 +863,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th style="text-align: center;">minCount</th>
-<th style="text-align: center;">maxCount</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../../Extension/" title="Description"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-<a class="btn btn-neutral float-right" href="../../../../annexes/diffs-from-previous-editions/" title="Diffs from Previous Editions">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-left" href="../CdxPropertyEntry/" title="CdxPropertyEntry"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../../Properties/cdxPropName/" title="cdxPropName">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
@@ -828,8 +883,8 @@
 </div>
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
-<span><a href="../../Extension/" style="color: #fcfcfc">« Previous</a></span>
-<span><a href="../../../../annexes/diffs-from-previous-editions/" style="color: #fcfcfc">Next »</a></span>
+<span><a href="../CdxPropertyEntry/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../../Properties/cdxPropName/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../../../../js/jquery-3.6.0.min.js"></script>

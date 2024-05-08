@@ -6,7 +6,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Gitoid - SPDX v3 Specification</title>
+<title>ContentIdentifier - SPDX v3 Specification</title>
 <link href="../../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
@@ -14,8 +14,8 @@
 <link href="../../../../css/version-select.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Gitoid";
-        var mkdocs_page_input_path = "model/Software/Properties/gitoid.md";
+        var mkdocs_page_name = "ContentIdentifier";
+        var mkdocs_page_input_path = "model/Software/Classes/ContentIdentifier.md";
         var mkdocs_page_url = null;
       </script>
 <!--[if lt IE 9]>
@@ -55,6 +55,10 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../terms-and-definitions/">Terms and definitions</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../serializations/">Model and serializations</a>
 </li>
 </ul>
 <ul>
@@ -271,41 +275,23 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#">Individuals</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Core/Individuals/NoAssertionElement/">NoAssertionElement</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Core/Individuals/NoneElement/">NoneElement</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal current" href="#">Software</a>
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../Software/">Description</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="../../Classes/File/">File</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../Classes/Package/">Package</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../Classes/Sbom/">Sbom</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../Classes/Snippet/">Snippet</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../Classes/SoftwareArtifact/">SoftwareArtifact</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Properties</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Classes</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../additionalPurpose/">additionalPurpose</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../attributionText/">attributionText</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../byteRange/">byteRange</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../contentType/">contentType</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../copyrightText/">copyrightText</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../downloadLocation/">downloadLocation</a>
-</li>
-<li class="toctree-l3 current"><a class="reference internal current" href="./">Gitoid</a>
+<li class="toctree-l3 current"><a class="reference internal current" href="./">ContentIdentifier</a>
 <ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a>
 </li>
@@ -313,32 +299,70 @@
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#metadata">Metadata</a>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#referenced">Referenced</a>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../homePage/">homePage</a>
+<li class="toctree-l3"><a class="reference internal" href="../File/">File</a>
 </li>
-<li class="toctree-l3"><a class="" href="../isDirectory.md">None</a>
+<li class="toctree-l3"><a class="reference internal" href="../Package/">Package</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../lineRange/">lineRange</a>
+<li class="toctree-l3"><a class="reference internal" href="../Sbom/">Sbom</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../packageUrl/">packageUrl</a>
+<li class="toctree-l3"><a class="reference internal" href="../Snippet/">Snippet</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../packageVersion/">packageVersion</a>
+<li class="toctree-l3"><a class="reference internal" href="../SoftwareArtifact/">SoftwareArtifact</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../primaryPurpose/">primaryPurpose</a>
+</ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../sbomType/">sbomType</a>
+<li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/additionalPurpose/">additionalPurpose</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../snippetFromFile/">snippetFromFile</a>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/attributionText/">attributionText</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../sourceInfo/">sourceInfo</a>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/byteRange/">byteRange</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/contentIdentifier/">contentIdentifier</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/contentIdentifierType/">contentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/contentIdentifierValue/">contentIdentifierValue</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/contentType/">contentType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/copyrightText/">copyrightText</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/downloadLocation/">downloadLocation</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/fileKind/">fileKind</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/homePage/">homePage</a>
+</li>
+<li class="toctree-l3"><a class="" href="../../Properties/isDirectory.md">None</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/lineRange/">lineRange</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/packageUrl/">packageUrl</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/packageVersion/">packageVersion</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/primaryPurpose/">primaryPurpose</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/sbomType/">sbomType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/snippetFromFile/">snippetFromFile</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Properties/sourceInfo/">sourceInfo</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Vocabularies/ContentIdentifierType/">ContentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Vocabularies/FileKindType/">FileKindType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Vocabularies/SbomType/">SbomType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Vocabularies/SoftwarePurpose/">SoftwarePurpose</a>
@@ -561,6 +585,8 @@
 <ul>
 <li class="toctree-l3"><a class="" href="../../../Dataset/Classes/Dataset.md">None</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Classes/DatasetPackage/">DatasetPackage</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -582,6 +608,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/datasetType/">datasetType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/datasetUpdateMechanism/">datasetUpdateMechanism</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/hasSensitivePersonalInformation/">hasSensitivePersonalInformation</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Dataset/Properties/intendedUse/">intendedUse</a>
 </li>
@@ -613,6 +641,10 @@
 <ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Classes/AIPackage/">AIPackage</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Classes/EnergyConsumption/">EnergyConsumption</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Classes/EnergyConsumptionDescription/">EnergyConsumptionDescription</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -623,7 +655,15 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/energyConsumption/">energyConsumption</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/energyQuantity/">energyQuantity</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/energyUnit/">energyUnit</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/finetuningEnergyConsumption/">finetuningEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/hyperparameter/">Hyperparameter</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/inferenceEnergyConsumption/">inferenceEnergyConsumption</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/informationAboutApplication/">informationAboutApplication</a>
 </li>
@@ -645,12 +685,18 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/standardCompliance/">standardCompliance</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/trainingEnergyConsumption/">trainingEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/typeOfModel/">typeOfModel</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Properties/useSensitivePersonalInformation/">useSensitivePersonalInformation</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../AI/Vocabularies/EnergyUnitType/">EnergyUnitType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../AI/Vocabularies/SafetyRiskAssessmentType/">SafetyRiskAssessmentType</a>
 </li>
 </ul>
@@ -703,7 +749,21 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extension/Classes/CdxPropertiesExtension/">CdxPropertiesExtension</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extension/Classes/CdxPropertyEntry/">CdxPropertyEntry</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../Extension/Classes/Extension/">Extension</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extension/Properties/cdxPropName/">cdxPropName</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extension/Properties/cdxPropValue/">cdxPropValue</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extension/Properties/cdxProperty/">cdxProperty</a>
 </li>
 </ul>
 </li>
@@ -714,11 +774,19 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/diffs-from-previous-editions/">Diffs from Previous Editions</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/getting-started/">Getting started with SPDX 3</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/RDF-object-model-and-identifier-syntax/">RDF Object Model and Identifier Syntax</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/SPDX-license-expressions/">SPDX License Expressions</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../annexes/using-SPDX-short-identifiers-in-source-files/">Using SPDX short identifiers in Source Files</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/using-SPDX-to-comply-with-industry-guidance/">Using SPDX to comply with norms, standards and regulation</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/including-security-information-in-SPDX/">Including Security Information in SPDX</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../annexes/SPDX-Lite/">SPDX Lite</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">licenses</span></p>
@@ -742,8 +810,8 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../../.."></a></li>
 <li class="breadcrumb-item">model</li>
 <li class="breadcrumb-item">Software</li>
-<li class="breadcrumb-item">Properties</li>
-<li class="breadcrumb-item active">Gitoid</li>
+<li class="breadcrumb-item">Classes</li>
+<li class="breadcrumb-item active">ContentIdentifier</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -751,18 +819,17 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<!-- Automatically generated by spec-parser v2.0.0 on 2024-04-11T20:44:04.541701+00:00 -->
+<!-- Automatically generated by spec-parser v2.1.0 on 2024-05-08T19:53:19.187587+00:00 -->
 <!-- SPDX-License-Identifier: Community-Spec-1.0 -->
-<h1 id="gitoid">gitoid</h1>
+<h1 id="contentidentifier">ContentIdentifier</h1>
 <h2 id="summary">Summary</h2>
-<p>Used to record the artifact’s gitoid: a canonical, unique, immutable identifier that can be used for software integrity verification.</p>
+<p>A canonical, unique, immutable identifier</p>
 <h2 id="description">Description</h2>
-<p>The gitoid is a canonical, unique, immutable artifact identifier for each software artifact.
-The gitoid for any software artifact can be calculated and recorded in SPDX 3.0 Snippet, File, or Package Elements.</p>
-<p>The gitoid is defined as the Git Object Identifier of type <code>blob</code> of the software artifact, expressed in the <a href="https://www.iana.org/assignments/uri-schemes/prov/gitoid">gitoid URI scheme</a>.</p>
-<p>The OmniBOR ID for the OmniBOR Document associated with a software artifact should not be recorded in this field. Rather, OmniBOR IDs should be recorded in the SPDX Element's ExternalIdentifier property.</p>
+<p>A ContentIdentifier is a canonical, unique, immutable identifier of the content
+of a software artifact, such as a package, a file, or a snippet.</p>
+<p>It can be used for verifying its identity and integrity.</p>
 <h2 id="metadata">Metadata</h2>
-<p><code>https://spdx.org/rdf/3.0.0/terms/Software/gitoid</code></p>
+<p><code>https://spdx.org/rdf/3.0.0/terms/Software/ContentIdentifier</code></p>
 <table>
 <thead>
 <tr>
@@ -773,27 +840,48 @@ The gitoid for any software artifact can be calculated and recorded in SPDX 3.0 
 <tbody>
 <tr>
 <td>Name</td>
-<td>gitoid</td>
+<td>ContentIdentifier</td>
 </tr>
 <tr>
-<td>Nature</td>
-<td>DataProperty</td>
+<td>Instantiability</td>
+<td>Concrete</td>
 </tr>
 <tr>
-<td>Range</td>
-<td>xsd:anyURI</td>
+<td>SubclassOf</td>
+<td><a href="../../../Core/Classes/IntegrityMethod/">/Core/IntegrityMethod</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="referenced">Referenced</h2>
-<ul>
-<li><a href="../../Classes/SoftwareArtifact/">/Software/SoftwareArtifact</a></li>
-</ul>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th style="text-align: center;">minCount</th>
+<th style="text-align: center;">maxCount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../Properties/contentIdentifierType/">contentIdentifierType</a></td>
+<td><a href="../../Vocabularies/ContentIdentifierType/">ContentIdentifierType</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td><a href="../../Properties/contentIdentifierValue/">contentIdentifierValue</a></td>
+<td>xsd:anyURI</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../downloadLocation/" title="downloadLocation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-<a class="btn btn-neutral float-right" href="../homePage/" title="homePage">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-left" href="../../Software/" title="Description"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-right" href="../File/" title="File">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
@@ -809,8 +897,8 @@ The gitoid for any software artifact can be calculated and recorded in SPDX 3.0 
 </div>
 <div aria-label="Versions" class="rst-versions" role="note">
 <span class="rst-current-version" data-toggle="rst-current-version">
-<span><a href="../downloadLocation/" style="color: #fcfcfc">« Previous</a></span>
-<span><a href="../homePage/" style="color: #fcfcfc">Next »</a></span>
+<span><a href="../../Software/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../File/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../../../../js/jquery-3.6.0.min.js"></script>

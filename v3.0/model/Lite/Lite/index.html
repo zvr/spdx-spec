@@ -58,6 +58,10 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../serializations/">Model and serializations</a>
+</li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../bibliography/">Bibliography</a>
 </li>
 </ul>
@@ -271,6 +275,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#">Individuals</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Core/Individuals/NoAssertionElement/">NoAssertionElement</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Core/Individuals/NoneElement/">NoneElement</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#">Software</a>
@@ -279,6 +291,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Software/Classes/ContentIdentifier/">ContentIdentifier</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Classes/File/">File</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Classes/Package/">Package</a>
@@ -299,13 +313,19 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/byteRange/">byteRange</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/contentIdentifier/">contentIdentifier</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/contentIdentifierType/">contentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/contentIdentifierValue/">contentIdentifierValue</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/contentType/">contentType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/copyrightText/">copyrightText</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/downloadLocation/">downloadLocation</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/gitoid/">Gitoid</a>
+<li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/fileKind/">fileKind</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Properties/homePage/">homePage</a>
 </li>
@@ -329,6 +349,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Software/Vocabularies/ContentIdentifierType/">ContentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Software/Vocabularies/FileKindType/">FileKindType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Vocabularies/SbomType/">SbomType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Software/Vocabularies/SoftwarePurpose/">SoftwarePurpose</a>
@@ -551,6 +575,8 @@
 <ul>
 <li class="toctree-l3"><a class="" href="../../Dataset/Classes/Dataset.md">None</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../Dataset/Classes/DatasetPackage/">DatasetPackage</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -572,6 +598,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Dataset/Properties/datasetType/">datasetType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Dataset/Properties/datasetUpdateMechanism/">datasetUpdateMechanism</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Dataset/Properties/hasSensitivePersonalInformation/">hasSensitivePersonalInformation</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../Dataset/Properties/intendedUse/">intendedUse</a>
 </li>
@@ -603,6 +631,10 @@
 <ul>
 <li class="toctree-l3"><a class="reference internal" href="../../AI/Classes/AIPackage/">AIPackage</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Classes/EnergyConsumption/">EnergyConsumption</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Classes/EnergyConsumptionDescription/">EnergyConsumptionDescription</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -613,7 +645,15 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/energyConsumption/">energyConsumption</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/energyQuantity/">energyQuantity</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/energyUnit/">energyUnit</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/finetuningEnergyConsumption/">finetuningEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/hyperparameter/">Hyperparameter</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/inferenceEnergyConsumption/">inferenceEnergyConsumption</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/informationAboutApplication/">informationAboutApplication</a>
 </li>
@@ -635,12 +675,18 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/standardCompliance/">standardCompliance</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/trainingEnergyConsumption/">trainingEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/typeOfModel/">typeOfModel</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Properties/useSensitivePersonalInformation/">useSensitivePersonalInformation</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../AI/Vocabularies/EnergyUnitType/">EnergyUnitType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../AI/Vocabularies/SafetyRiskAssessmentType/">SafetyRiskAssessmentType</a>
 </li>
 </ul>
@@ -691,6 +737,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#metadata">Metadata</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#profile-conformance">Profile conformance</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -701,7 +749,21 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Extension/Classes/CdxPropertiesExtension/">CdxPropertiesExtension</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Extension/Classes/CdxPropertyEntry/">CdxPropertyEntry</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../Extension/Classes/Extension/">Extension</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Extension/Properties/cdxPropName/">cdxPropName</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Extension/Properties/cdxPropValue/">cdxPropValue</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Extension/Properties/cdxProperty/">cdxProperty</a>
 </li>
 </ul>
 </li>
@@ -712,11 +774,19 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../annexes/diffs-from-previous-editions/">Diffs from Previous Editions</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../annexes/getting-started/">Getting started with SPDX 3</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../annexes/RDF-object-model-and-identifier-syntax/">RDF Object Model and Identifier Syntax</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../annexes/SPDX-license-expressions/">SPDX License Expressions</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../annexes/using-SPDX-short-identifiers-in-source-files/">Using SPDX short identifiers in Source Files</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../annexes/using-SPDX-to-comply-with-industry-guidance/">Using SPDX to comply with norms, standards and regulation</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../annexes/including-security-information-in-SPDX/">Including Security Information in SPDX</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../annexes/SPDX-Lite/">SPDX Lite</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">licenses</span></p>
@@ -748,16 +818,25 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<!-- Automatically generated by spec-parser v2.0.0 on 2024-04-11T20:44:04.541701+00:00 -->
+<!-- Automatically generated by spec-parser v2.1.0 on 2024-05-08T19:53:19.187587+00:00 -->
 <!-- SPDX-License-Identifier: Community-Spec-1.0 -->
 <h1 id="lite">Lite</h1>
 <h2 id="summary">Summary</h2>
-<p>The SPDX Lite profile defines a subset of the SPDX specification, from the point of view of use cases in some industries. SPDX Lite aims at the balance between the SPDX standard and actual workflows in some industries.</p>
+<p>The SPDX Lite profile defines a subset of the SPDX specification, from the
+point of view of use cases in some industries. SPDX Lite aims at the balance
+between the SPDX standard and actual workflows in some industries.</p>
 <h2 id="description">Description</h2>
-<p>The SPDX Lite profile consists of mandatory fields from the Document Creation and Package Information sections and other basic information.</p>
-<p>The mandatory part of the Package information in SPDX Lite is basic but useful for complying with licenses. It is easy to understand licensing information by reading an SPDX Lite file. It is easy to create manually an SPDX Lite file by anyone who does not have enough knowledge about licensing information, so that tools are not necessarily required to create an SPDX Lite file.</p>
-<p>SPDX Lite has affinity with SPDX tools due to its containing the mandatory part of the Document Creation and Package Information in the SPDX Lite definition.</p>
-<p>An SPDX Lite document can be used in parallel with SPDX documents in software supply chains.</p>
+<p>The SPDX Lite profile consists of mandatory fields from the Document Creation
+and Package Information sections and other basic information.</p>
+<p>The mandatory part of the Package information in SPDX Lite is basic but useful
+for complying with licenses. It is easy to understand licensing information by
+reading an SPDX Lite file. It is easy to create manually an SPDX Lite file by
+anyone who does not have enough knowledge about licensing information, so that
+tools are not necessarily required to create an SPDX Lite file.</p>
+<p>SPDX Lite has affinity with SPDX tools due to its containing the mandatory part
+of the Document Creation and Package Information in the SPDX Lite definition.</p>
+<p>An SPDX Lite document can be used in parallel with SPDX documents in software
+supply chains.</p>
 <h2 id="metadata">Metadata</h2>
 <p><code>https://spdx.org/rdf/3.0.0/terms/Lite</code></p>
 <table>
@@ -774,6 +853,24 @@
 </tr>
 </tbody>
 </table>
+<h2 id="profile-conformance">Profile conformance</h2>
+<p>In addition to the following, please refer to the Annex for elements defined in
+other profiles that should be included as part of the Lite profile.</p>
+<p>For a /Software/Package to be conformant with this profile,
+the following has to hold:</p>
+<ol>
+<li>The mincount for <code>/Core/Element/name</code> is 1</li>
+<li>The mincount for <code>/Software/Package/packageVersion</code> is 1</li>
+<li>The mincount for <code>/Software/SoftwareArtifact/copyrightText</code> is 1</li>
+<li>for every <code>/Software/Package</code> there MUST exist exactly one
+   <code>/Core/Relationship</code> of type <code>concludedLicense</code> having that element as its
+   <code>from</code> property and an <code>/SimpleLicensing/AnyLicenseInfo</code> as its <code>to</code>
+   property.</li>
+<li>for every <code>/Software/Package</code> there MUST exist exactly one
+   <code>/Core/Relationship</code> of type <code>declaredLicense</code> having that element as its
+   <code>from</code> property and an <code>/SimpleLicensing/AnyLicenseInfo</code> as its <code>to</code>
+   property.</li>
+</ol>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">

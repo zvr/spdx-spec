@@ -60,6 +60,10 @@
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="serializations/">Model and serializations</a>
+</li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="bibliography/">Bibliography</a>
 </li>
 </ul>
@@ -273,6 +277,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#">Individuals</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="model/Core/Individuals/NoAssertionElement/">NoAssertionElement</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Core/Individuals/NoneElement/">NoneElement</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#">Software</a>
@@ -281,6 +293,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="model/Software/Classes/ContentIdentifier/">ContentIdentifier</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Classes/File/">File</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Classes/Package/">Package</a>
@@ -301,13 +315,19 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/byteRange/">byteRange</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/contentIdentifier/">contentIdentifier</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/contentIdentifierType/">contentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/contentIdentifierValue/">contentIdentifierValue</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/contentType/">contentType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/copyrightText/">copyrightText</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/downloadLocation/">downloadLocation</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/gitoid/">Gitoid</a>
+<li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/fileKind/">fileKind</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Properties/homePage/">homePage</a>
 </li>
@@ -331,6 +351,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="model/Software/Vocabularies/ContentIdentifierType/">ContentIdentifierType</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Software/Vocabularies/FileKindType/">FileKindType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Vocabularies/SbomType/">SbomType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Software/Vocabularies/SoftwarePurpose/">SoftwarePurpose</a>
@@ -553,6 +577,8 @@
 <ul>
 <li class="toctree-l3"><a class="" href="model/Dataset/Classes/Dataset.md">None</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="model/Dataset/Classes/DatasetPackage/">DatasetPackage</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -574,6 +600,8 @@
 <li class="toctree-l3"><a class="reference internal" href="model/Dataset/Properties/datasetType/">datasetType</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Dataset/Properties/datasetUpdateMechanism/">datasetUpdateMechanism</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Dataset/Properties/hasSensitivePersonalInformation/">hasSensitivePersonalInformation</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/Dataset/Properties/intendedUse/">intendedUse</a>
 </li>
@@ -605,6 +633,10 @@
 <ul>
 <li class="toctree-l3"><a class="reference internal" href="model/AI/Classes/AIPackage/">AIPackage</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Classes/EnergyConsumption/">EnergyConsumption</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Classes/EnergyConsumptionDescription/">EnergyConsumptionDescription</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
@@ -615,7 +647,15 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/energyConsumption/">energyConsumption</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/energyQuantity/">energyQuantity</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/energyUnit/">energyUnit</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/finetuningEnergyConsumption/">finetuningEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/hyperparameter/">Hyperparameter</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/inferenceEnergyConsumption/">inferenceEnergyConsumption</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/informationAboutApplication/">informationAboutApplication</a>
 </li>
@@ -637,12 +677,18 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/standardCompliance/">standardCompliance</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/trainingEnergyConsumption/">trainingEnergyConsumption</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/typeOfModel/">typeOfModel</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Properties/useSensitivePersonalInformation/">useSensitivePersonalInformation</a>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="model/AI/Vocabularies/EnergyUnitType/">EnergyUnitType</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="model/AI/Vocabularies/SafetyRiskAssessmentType/">SafetyRiskAssessmentType</a>
 </li>
 </ul>
@@ -695,7 +741,21 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
 <ul>
+<li class="toctree-l3"><a class="reference internal" href="model/Extension/Classes/CdxPropertiesExtension/">CdxPropertiesExtension</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Extension/Classes/CdxPropertyEntry/">CdxPropertyEntry</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="model/Extension/Classes/Extension/">Extension</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="model/Extension/Properties/cdxPropName/">cdxPropName</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Extension/Properties/cdxPropValue/">cdxPropValue</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model/Extension/Properties/cdxProperty/">cdxProperty</a>
 </li>
 </ul>
 </li>
@@ -706,11 +766,19 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="annexes/diffs-from-previous-editions/">Diffs from Previous Editions</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/getting-started/">Getting started with SPDX 3</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="annexes/RDF-object-model-and-identifier-syntax/">RDF Object Model and Identifier Syntax</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="annexes/SPDX-license-expressions/">SPDX License Expressions</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="annexes/using-SPDX-short-identifiers-in-source-files/">Using SPDX short identifiers in Source Files</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/using-SPDX-to-comply-with-industry-guidance/">Using SPDX to comply with norms, standards and regulation</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/including-security-information-in-SPDX/">Including Security Information in SPDX</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/SPDX-Lite/">SPDX Lite</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">licenses</span></p>
@@ -740,7 +808,7 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="the-software-package-data-exchange-spdx-specification-version-30-draft">The Software Package Data Exchange® (SPDX®) Specification Version 3.0-DRAFT</h1>
+<h1 id="the-system-package-data-exchange-spdx-specification-version-30">The System Package Data Exchange® (SPDX®) Specification Version 3.0</h1>
 <p>Copyright © 2010-2024 Linux Foundation and its Contributors.</p>
 <p>This work is licensed under the
 Community Specification License 1.0 (Community-Spec-1.0).
@@ -748,13 +816,17 @@ Pre-existing portions of this work from copyright holders who have not subsequen
 Copies of these licenses are reproduced in their entirety herein.</p>
 <p>With thanks to
 Adam Cohn,
+Adolfo García Veytia,
 Alan Tse,
 Alexios Zavras,
 Andrew Back,
 Ann Thornton,
+Armin Tänzer,
+Arthit Suriyawongkul,
 Basil Peace,
 Bill Schineller,
 Bradlee Edmondson,
+Brandon Lum,
 Bruno Cornec,
 Ciaran Farrell,
 Daniel German,
@@ -769,18 +841,22 @@ Eran Strod,
 Eric Thomas,
 Esteban Rockett,
 Gary O'Neall,
+Gopi Krishnan Rajbahadur,
 Guillaume Rousseau,
 Hassib Khanafer,
 Henk Birkholz,
 Hiroyuki Fukuchi,
 Jack Manbeck,
 Jaime Garcia,
+Jeff Licquia,
 Jeff Luszcz,
 Jeff Schutt,
 Jilayne Lovejoy,
 John Ellis,
 Jonas Oberg,
+Joshua Watt,
 Kamsang Salima,
+Karen Bennet,
 Karen Copenhaver,
 Kate Stewart,
 Kevin Mitchell,
@@ -798,8 +874,10 @@ Mark Atwood,
 Matija Šuklje,
 Matt Germonprez,
 Maximilian Huber,
+Meret Behrens,
 Michael J. Herzog,
 Michel Ruffin,
+Nicole Pappler,
 Nisha Kumar,
 Norio Kobota,
 Nuno Brito,
@@ -826,6 +904,7 @@ Shane Coughlan,
 Steve Cropper,
 Steve Winslow,
 Stuart Hughes,
+Takashi Ninjouji,
 Thomas F. Incorvia,
 Thomas Steenbergen,
 Tom Callaway,
@@ -878,5 +957,5 @@ for their contributions and assistance.</p>
 </html>
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-04-11 20:44:09.100586+00:00
+Build Date UTC : 2024-05-08 19:53:23.725511+00:00
 -->
