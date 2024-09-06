@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors." /><link rel="canonical" href="https://spdx.github.io/spdx-spec/v3.0.1/conformance/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>4 Conformance - SPDX v3 Specification</title>
+    <title>5. Conformance - SPDX Specification 3.0.1</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -14,9 +14,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "4 Conformance";
+        var mkdocs_page_name = "5. Conformance";
         var mkdocs_page_input_path = "conformance.md";
-        var mkdocs_page_url = null;
+        var mkdocs_page_url = "/spdx-spec/v3.0.1/conformance/";
       </script>
     
     <!--[if lt IE 9]>
@@ -32,7 +32,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> SPDX v3 Specification
+          <a href=".." class="icon icon-home"> SPDX Specification 3.0.1
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -42,40 +42,74 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Copyright</a>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                <li class="toctree-l1"><a class="reference internal" href="../front/copyright/">Copyright</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../scope/">Scope</a>
+                <li class="toctree-l1"><a class="reference internal" href="../front/introduction/">Introduction</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../normative-references/">Normative references</a>
+                <li class="toctree-l1"><a class="reference internal" href="../scope/">1. Scope</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../terms-and-definitions/">Terms and definitions</a>
+                <li class="toctree-l1"><a class="reference internal" href="../references/">2. References</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../serializations/">Model and serializations</a>
+                <li class="toctree-l1"><a class="reference internal" href="../symbols/">3. Symbols</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../bibliography/">Bibliography</a>
+                <li class="toctree-l1"><a class="reference internal" href="../terms-and-definitions/">4. Terms and definitions</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">5. Conformance</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#alternate-notation-for-some-conformance-requirements">Alternate notation for some conformance requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#introduction-to-profiles">Introduction to Profiles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#core-profile-compliance-point">Core Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#software-profile-compliance-point">Software Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#security-profile-compliance-point">Security Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#licensing-profile-compliance-point">Licensing Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dataset-profile-compliance-point">Dataset Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ai-profile-compliance-point">AI Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#build-profile-compliance-point">Build Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lite-profile-compliance-point">Lite Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#extension-profile-compliance-point">Extension Profile compliance point</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#trademark-compliance">Trademark Compliance</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../serializations/">6. Model and serializations</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">model</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Core</a>
+                  <li class="toctree-l1"><a class="reference internal" >Core</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Core/Core/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Classes/Agent/">Agent</a>
                 </li>
@@ -127,9 +161,9 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/algorithm/">Algorithm</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/algorithm/">algorithm</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/annotationType/">annotationType</a>
                 </li>
@@ -137,15 +171,15 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/builtTime/">builtTime</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/comment/">Comment</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/comment/">comment</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/completeness/">Completeness</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/completeness/">completeness</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/contentType/">contentType</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/context/">Context</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/context/">context</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/created/">Created</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/created/">created</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/createdBy/">createdBy</a>
                 </li>
@@ -157,15 +191,15 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/definingArtifact/">definingArtifact</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/description/">Description</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/description/">description</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/element/">Element</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/element/">element</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/endIntegerRange/">endIntegerRange</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/endTime/">endTime</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/extension/">Extension</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/extension/">extension</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/externalIdentifier/">externalIdentifier</a>
                 </li>
@@ -177,27 +211,27 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/externalSpdxId/">externalSpdxId</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/from/">From</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/from/">from</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/hashValue/">hashValue</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/identifier/">Identifier</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/identifier/">identifier</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/identifierLocator/">identifierLocator</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/imports/">Imports</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/import/">import</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/issuingAuthority/">issuingAuthority</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/key/">Key</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/key/">key</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/locationHint/">locationHint</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/locator/">Locator</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/locator/">locator</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/name/">Name</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/name/">name</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/namespace/">Namespace</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/namespace/">namespace</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/namespaceMap/">namespaceMap</a>
                 </li>
@@ -205,7 +239,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/packageVerificationCodeExcludedFile/">packageVerificationCodeExcludedFile</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/prefix/">Prefix</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/prefix/">prefix</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/profileConformance/">profileConformance</a>
                 </li>
@@ -215,7 +249,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/rootElement/">rootElement</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/scope/">Scope</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/scope/">scope</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/spdxId/">spdxId</a>
                 </li>
@@ -225,27 +259,27 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/startTime/">startTime</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/statement/">Statement</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/statement/">statement</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/subject/">Subject</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/subject/">subject</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/summary/">Summary</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/summary/">summary</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/suppliedBy/">suppliedBy</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/supportLevel/">supportLevel</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/to/">To</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/to/">to</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/validUntilTime/">validUntilTime</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/value/">Value</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/value/">value</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/verifiedUsing/">verifiedUsing</a>
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
+                <li class="toctree-l2"><a class="reference internal" >Vocabularies</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Vocabularies/AnnotationType/">AnnotationType</a>
                 </li>
@@ -269,7 +303,15 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Datatypes</a>
+                <li class="toctree-l2"><a class="reference internal" >Individuals</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Individuals/NoAssertionElement/">NoAssertionElement</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Individuals/NoneElement/">NoneElement</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Datatypes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Datatypes/DateTime/">DateTime</a>
                 </li>
@@ -279,21 +321,13 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Individuals</a>
-    <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Individuals/NoAssertionElement/">NoAssertionElement</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Individuals/NoneElement/">NoneElement</a>
-                </li>
-    </ul>
-                </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Software</a>
+                  <li class="toctree-l1"><a class="reference internal" >Software</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Software/Software/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Software/Classes/ContentIdentifier/">ContentIdentifier</a>
                 </li>
@@ -309,7 +343,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Software/Properties/additionalPurpose/">additionalPurpose</a>
                 </li>
@@ -322,8 +356,6 @@
                 <li class="toctree-l3"><a class="reference internal" href="../model/Software/Properties/contentIdentifierType/">contentIdentifierType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Software/Properties/contentIdentifierValue/">contentIdentifierValue</a>
-                </li>
-                <li class="toctree-l3"><a class="" href="../model/Software/Properties/contentType.md">None</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Software/Properties/copyrightText/">copyrightText</a>
                 </li>
@@ -349,7 +381,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
+                <li class="toctree-l2"><a class="reference internal" >Vocabularies</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Software/Vocabularies/ContentIdentifierType/">ContentIdentifierType</a>
                 </li>
@@ -363,11 +395,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Security</a>
+                  <li class="toctree-l1"><a class="reference internal" >Security</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Security/Security/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Classes/CvssV2VulnAssessmentRelationship/">CvssV2VulnAssessmentRelationship</a>
                 </li>
@@ -397,7 +429,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/actionStatement/">actionStatement</a>
                 </li>
@@ -409,7 +441,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/decisionType/">decisionType</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/exploited/">Exploited</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/exploited/">exploited</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/impactStatement/">impactStatement</a>
                 </li>
@@ -417,19 +449,19 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/justificationType/">justificationType</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/locator/">Locator</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/locator/">locator</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/modifiedTime/">modifiedTime</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/percentile/">Percentile</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/percentile/">percentile</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/probability/">Probability</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/probability/">probability</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/publishedTime/">publishedTime</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/score/">Score</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/score/">score</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/severity/">Severity</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/severity/">severity</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Properties/statusNotes/">statusNotes</a>
                 </li>
@@ -441,7 +473,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
+                <li class="toctree-l2"><a class="reference internal" >Vocabularies</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Security/Vocabularies/CvssSeverityType/">CvssSeverityType</a>
                 </li>
@@ -455,17 +487,17 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Licensing</a>
+                  <li class="toctree-l1"><a class="reference internal" >Licensing</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Licensing/Licensing/">Description</a>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">SimpleLicensing</a>
+                  <li class="toctree-l1"><a class="reference internal" >SimpleLicensing</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/SimpleLicensing/SimpleLicensing/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/SimpleLicensing/Classes/AnyLicenseInfo/">AnyLicenseInfo</a>
                 </li>
@@ -475,7 +507,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/SimpleLicensing/Properties/customIdToUri/">customIdToUri</a>
                 </li>
@@ -489,11 +521,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">ExpandedLicensing</a>
+                  <li class="toctree-l1"><a class="reference internal" >ExpandedLicensing</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/ExpandedLicensing/ExpandedLicensing/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/ExpandedLicensing/Classes/ConjunctiveLicenseSet/">ConjunctiveLicenseSet</a>
                 </li>
@@ -521,7 +553,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/ExpandedLicensing/Properties/additionText/">additionText</a>
                 </li>
@@ -539,7 +571,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/ExpandedLicensing/Properties/listVersionAdded/">listVersionAdded</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/ExpandedLicensing/Properties/member/">Member</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/ExpandedLicensing/Properties/member/">member</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/ExpandedLicensing/Properties/obsoletedBy/">obsoletedBy</a>
                 </li>
@@ -559,7 +591,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Individuals</a>
+                <li class="toctree-l2"><a class="reference internal" >Individuals</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/ExpandedLicensing/Individuals/NoAssertionLicense/">NoAssertionLicense</a>
                 </li>
@@ -569,17 +601,17 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Dataset</a>
+                  <li class="toctree-l1"><a class="reference internal" >Dataset</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Dataset/Dataset/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Dataset/Classes/DatasetPackage/">DatasetPackage</a>
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Dataset/Properties/anonymizationMethodUsed/">anonymizationMethodUsed</a>
                 </li>
@@ -605,11 +637,11 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Dataset/Properties/knownBias/">knownBias</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Dataset/Properties/sensor/">Sensor</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Dataset/Properties/sensor/">sensor</a>
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
+                <li class="toctree-l2"><a class="reference internal" >Vocabularies</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Dataset/Vocabularies/ConfidentialityLevelType/">ConfidentialityLevelType</a>
                 </li>
@@ -621,11 +653,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">AI</a>
+                  <li class="toctree-l1"><a class="reference internal" >AI</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/AI/AI/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Classes/AIPackage/">AIPackage</a>
                 </li>
@@ -635,11 +667,11 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/autonomyType/">autonomyType</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/domain/">Domain</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/domain/">domain</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/energyConsumption/">energyConsumption</a>
                 </li>
@@ -649,7 +681,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/finetuningEnergyConsumption/">finetuningEnergyConsumption</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/hyperparameter/">Hyperparameter</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/hyperparameter/">hyperparameter</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/inferenceEnergyConsumption/">inferenceEnergyConsumption</a>
                 </li>
@@ -657,9 +689,9 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/informationAboutTraining/">informationAboutTraining</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/limitation/">Limitation</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/limitation/">limitation</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/metric/">Metric</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/metric/">metric</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Properties/metricDecisionThreshold/">metricDecisionThreshold</a>
                 </li>
@@ -679,7 +711,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Vocabularies</a>
+                <li class="toctree-l2"><a class="reference internal" >Vocabularies</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/AI/Vocabularies/EnergyUnitType/">EnergyUnitType</a>
                 </li>
@@ -689,17 +721,17 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Build</a>
+                  <li class="toctree-l1"><a class="reference internal" >Build</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Build/Build/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Build/Classes/Build/">Build</a>
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Build/Properties/buildEndTime/">buildEndTime</a>
                 </li>
@@ -715,25 +747,25 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Build/Properties/configSourceUri/">configSourceUri</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Build/Properties/environment/">Environment</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Build/Properties/environment/">environment</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Build/Properties/parameters/">Parameters</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Build/Properties/parameter/">parameter</a>
                 </li>
     </ul>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Lite</a>
+                  <li class="toctree-l1"><a class="reference internal" >Lite</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Lite/Lite/">Description</a>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Extension</a>
+                  <li class="toctree-l1"><a class="reference internal" >Extension</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../model/Extension/Extension/">Description</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Classes</a>
+                <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Extension/Classes/CdxPropertiesExtension/">CdxPropertiesExtension</a>
                 </li>
@@ -743,7 +775,7 @@
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">Properties</a>
+                <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Extension/Properties/cdxPropName/">cdxPropName</a>
                 </li>
@@ -758,34 +790,22 @@
               </ul>
               <p class="caption"><span class="caption-text">annexes</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/diffs-from-previous-editions/">Diffs from Previous Editions</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../annexes/rdf-model/">A. RDF model definition and diagrams</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/getting-started/">Getting started with SPDX 3</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../annexes/spdx-license-expressions/">B. SPDX license expressions</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/RDF-object-model-and-identifier-syntax/">RDF Object Model and Identifier Syntax</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../annexes/license-matching-guidelines-and-templates/">C. SPDX License List matching guidelines</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/SPDX-license-expressions/">SPDX License Expressions</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../annexes/spdx-lite/">D. SPDX Lite</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/license-matching-guidelines-and-templates/">SPDX license list matching guidelines</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/using-SPDX-short-identifiers-in-source-files/">Using SPDX short identifiers in Source Files</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/using-SPDX-to-comply-with-industry-guidance/">Using SPDX to comply with norms, standards and regulation</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/including-security-information-in-SPDX/">Including Security Information in SPDX</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/SPDX-Lite/">SPDX Lite</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/cross-reference/">Cross-referencing in SPDX 3</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../annexes/pkg-url-specification/">Package URL specification</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../annexes/pkg-url-specification/">E. Package URL specification</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">licenses</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../licenses/CC-BY-3.0/">Creative Commons Attribution License 3.0 Unported</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../licenses/Community-Spec-1.0/">Community Specification License 1.0</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../licenses/CC-BY-3.0/">Creative Commons Attribution License 3.0 Unported</a>
                   </li>
               </ul>
       </div>
@@ -795,14 +815,14 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">SPDX v3 Specification</a>
+          <a href="..">SPDX Specification 3.0.1</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">4 Conformance</li>
+      <li class="breadcrumb-item active">5. Conformance</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -811,123 +831,242 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="4-conformance">4 Conformance</h1>
-<p>TODO: update for SPDXv3</p>
-<h2 id="41-spdx-current-and-previous-versions">4.1 SPDX Current and Previous Versions <a name="4.1"></a></h2>
-<p>This edition has the version number 2.3 as part of its title. This is a follow on from <a href="https://www.iso.org/standard/81870.html">ISO/IEC 5962:2021
-Information technology — SPDX® Specification V2.2.1</a>, and includes new fields.  Earlier editions were published by the SPDX workgroup via the Linux Foundation. The SPDX Specification was subsequently transposed into the Joint Development Foundation. [Those earlier editions are: 1.0 (August 2011), 1.1 (August 2012), 1.2 (October 2013), 2.0 (May 2015), 2.1 (November 2016), and 2.2 (May 2020).] Differences between this edition and earlier ones are reported in <a href="../annexes/diffs-from-previous-editions/">Annex J</a>; see also <a href="../bibliography/">[1]</a>.</p>
-<h2 id="42-obsolete-features">4.2 Obsolete features <a name="4.2"></a></h2>
-<p>Over the life of a standard, some older approaches can become obsolete and are dropped from subsequent editions, possibly with a replacement approach being provided. Such action involves <em>deprecating</em> those outdated features. This edition identifies all currently deprecated features.  No features present in 2.2.1 have been deprecated in this 2.3 release.</p>
-<h2 id="43-alternate-notation-for-some-conformance-requirements">4.3 Alternate notation for some conformance requirements <a name="4.3"></a></h2>
-<p>This standard contains more than a few <em>cardinality assertions</em>, each of which indicates absolute, optional, or conditional requirements. Here are some examples:</p>
+                <h1 id="conformance">Conformance</h1>
+<h2 id="alternate-notation-for-some-conformance-requirements">Alternate notation for some conformance requirements <a name="5.1"></a></h2>
+<p>This standard contains more than a few cardinality assertions, each of which
+indicates the minimum and maximum number of times a property may appear.
+These are represented by using "minCount" and "maxCount" respectively.
+The absolute minimum number of occurrences is zero (0),
+while for an unbounded maximum number of occurrences a star (*) is being used.</p>
+<p>Here are some examples:</p>
 <ul>
-<li>Cardinality: Mandatory, one.</li>
-<li>Cardinality: Optional, one or many.</li>
-<li>Cardinality: Mandatory, one if {condition} is true or {feature} omitted, zero (shall be omitted) if {condition} is false.</li>
+<li>minCount: 1</li>
+<li>maxCount: *</li>
 <li>Cardinality: 0..1</li>
 <li>Cardinality: 0..*</li>
 <li>Cardinality: 1..1</li>
 <li>Cardinality: 1..*</li>
 </ul>
-<p>Each of these assertions can easily be understood as to whether a feature is required, and if so, how many occurrences are required; also, whether a feature is permitted, and if so, in what number. As this is the format long familiar to the SPDX community, it has been preserved in this document.</p>
-<h2 id="44-standard-data-format-requirements">4.4 Standard data format requirements <a name="4.4"></a></h2>
-<p>The data format specification and recommendations are subject to the following constraints:</p>
+<p>Each of these assertions can easily be understood as to whether a feature is
+required, and if so, how many occurrences are required; also, whether a feature
+is permitted, and if so, in what number. As this is the format long familiar to
+the SPDX community, it has been preserved in this specification.</p>
+<h2 id="introduction-to-profiles">Introduction to Profiles <a name="5.2"></a></h2>
+<p>Profile is the term for a compliance point within the SPDX community across The
+Linux Foundation and OMG. The System Package Data Exchange (SPDX) specification
+defines the following nine compliance points, defined as “Profiles”:</p>
+<ul>
+<li>Core Profile</li>
+<li>Software Profile</li>
+<li>Security Profile</li>
+<li>Licensing Profile</li>
+<li>Dataset Profile</li>
+<li>AI Profile</li>
+<li>Build Profile</li>
+<li>Lite Profile</li>
+<li>Extension Profile</li>
+</ul>
+<p>The Core Profile is mandatory. All others are optional.</p>
+<h2 id="core-profile-compliance-point">Core Profile compliance point <a name="5.3"></a></h2>
+<p>The Core Profile includes the definitions of classes properties and
+vocabularies usable by all SPDX profiles when producing or consuming SPDX
+content. Although the classes, properties and vocabularies are somewhat
+extensive, the required fields are rather minimal to allow maximum flexibility
+while meeting minimum SBOM requirements. Software that conforms to the SPDX
+specification at the Core Profile compliance point shall be able to import and
+export serialized documents that conform with one of the defined SPDX
+serialization formats.</p>
+<p>Conformance to the Core Profile compliance point is mandatory for all other
+SPDX profiles.</p>
+<p>This compliance point, in combination with the Software Profile compliance
+point, provides a baseline of functionality that facilitates interchange of the
+bills of materials information produced by tools supporting SPDX.</p>
+<h2 id="software-profile-compliance-point">Software Profile compliance point <a name="5.4"></a></h2>
+<p>The Software Profile includes the definitions of classes, properties and
+vocabularies for refering to and conveying information about software and is
+usable by all SPDX profiles when producing or consuming SPDX content.</p>
+<p>Software that conforms to the SPDX specification at the Software Profile
+compliance point shall be able to import and export serialized documents that
+conform with one of the SPDX serialization formats defined SPDX serialization
+formats.</p>
+<p>Conformance to the Software Profile compliance point does not entail support
+for the Licensing, Dataset, AI, Build, Lite, or Extension profiles of the
+SPDX.</p>
+<p>This compliance point, in combination with the Core Profile compliance point,
+provides a baseline of functionality that facilitates interchange of the bills
+of materials information produced by tools supporting SPDX.</p>
+<h2 id="security-profile-compliance-point">Security Profile compliance point <a name="5.5"></a></h2>
+<p>The Security Profile captures security-related information when producing or
+consuming SPDX content.</p>
+<p>Software that conforms to the SPDX specification at the security profile
+compliance point shall be able to import and export serialized documents that
+conform with one of the SPDX serialization formats defined SPDX serialization
+formats, including the properties and relationships specified in the security
+profile, which are in support of exchanging information about software
+vulnerabilities that may exist, the severity of those vulnerabilities, and a
+mechanism to express how a vulnerability may affect a specific software element
+including if a fix is available.</p>
+<p>Conformance to the Security Profile compliance point does not entail support
+for the Licensing, Dataset, AI, Build, Lite, or Extension profiles of the
+SPDX.</p>
+<p>This compliance point facilitates interchange of the security information
+produced by tools supporting SPDX.</p>
+<h2 id="licensing-profile-compliance-point">Licensing Profile compliance point <a name="5.6"></a></h2>
+<p>The Licensing Profile includes capturing details relevant to software licensing
+and intellectual property information when producing or consuming SPDX content.
+Specifically, software that conforms to the SPDX specification at the Licensing
+profile compliance point shall be able to import and export serialized
+documents that conform with one of the SPDX serialization formats defined SPDX
+serialization formats, including the classes and fields that comprise the SPDX
+License Expression syntax and that relate to the
+<a href="https://spdx.org/licenses/">SPDX License List</a>.</p>
+<p>There are two associated profiles, the SimpleLicensing Profile
+and the ExpandedLicensing profiles.
+Both allow expression of the same information,
+albeit in different ways.</p>
+<p>Conformance to the Licensing Profile compliance point does not entail support
+for the Software, Security, Dataset, AI, Build, Lite, or Extension profiles of
+the SPDX.</p>
+<p>This compliance point facilitates interchange of the licensing documents
+expressing which licenses and copyright notices are determined by persons or
+automated tooling to apply to distributions of software that are produced by
+tools supporting SPDX.</p>
+<h2 id="dataset-profile-compliance-point">Dataset Profile compliance point <a name="5.7"></a></h2>
+<p>The Dataset Profile captures the relevant information about the datasets used
+in an AI system or other applications when producing or consuming SPDX content.</p>
+<p>Software that conforms to the SPDX specification at the Dataset Profile
+compliance point shall be able to import and export serialized documents that
+conform with one of the SPDX serialization formats defined SPDX serialization
+formats, including details such as dataset names, versions, sources, associated
+metadata, licensing information, and any other relevant attributes.
+The Dataset Profile can covey a description or summary of a dataset, including
+metadata, characteristics, and statistical information about the data.
+The Dataset Profile can convey insights into the structure, format, content,
+and properties of a dataset, helping users understand and analyze the data more
+effectively.</p>
+<p>Conformance to the Dataset Profile compliance point does not entail support
+for the Software, Licensing, Security, AI, Build, Lite, or Extension profiles
+of the SPDX.</p>
+<p>This compliance point facilitates interchange of the information about
+datasets produced by tools supporting SPDX.</p>
+<h2 id="ai-profile-compliance-point">AI Profile compliance point <a name="5.8"></a></h2>
+<p>The AI Profile captures an inventory list of software components and
+dependencies associated with an AI system when producing or consuming SPDX
+content.</p>
+<p>Software that conforms to the SPDX specification at the AI Profile compliance
+point shall be able to import and export serialized documents that conform with
+one of the SPDX serialization formats defined SPDX serialization formats,
+including the information about software components and dependencies associated
+with artificial intelligence and machine learning (AI/ML) models and systems.
+This inventory includes the software frameworks, libraries, and other
+components used to build or deploy the AI system, along with relevant
+information about their versions, licenses, and useful security references
+including ethical and security information.</p>
+<p>Conformance to the AI Profile compliance point does not entail support for the
+Software, Licensing, Security, Dataset, Build, Lite, or Extension profiles of
+the SPDX.</p>
+<p>This compliance point facilitates interchange of the AI model related
+information produced by tools supporting SPDX.</p>
+<h2 id="build-profile-compliance-point">Build Profile compliance point <a name="5.9"></a></h2>
+<p>The Build Profile captures build-related information when producing or
+consuming SPDX content.</p>
+<p>Software that conforms to the SPDX specification at the Build Profile
+compliance point shall be able to import and export serialized documents that
+conform with one of the SPDX serialization formats defined SPDX serialization
+formats, including associated definitions to help express how software is
+generated and transformed. This includes encoding the inputs, outputs,
+procedures/instructions, environments and actors from the build process along
+with the associated evidence.</p>
+<p>Conformance to the Build Profile compliance point does not entail support for
+the Software, Licensing, Security, Dataset, AI, Lite, or Extension profiles of
+the SPDX.</p>
+<p>This compliance point facilitates interchange of the build information produced
+by tools supporting SPDX.</p>
+<h2 id="lite-profile-compliance-point">Lite Profile compliance point <a name="5.10"></a></h2>
+<p>The Lite Profile captures the minimum set of information required for license
+compliance in the software supply chain for producing or consuming SPDX
+content.</p>
+<p>Software that conforms to the SPDX specification at the Lite Profile
+compliance point shall be able to import and export serialized documents that
+conform with one of the SPDX serialization formats defined SPDX serialization
+formats, including creation of the SBOM, package lists with licensing and other
+related items, and their relationships.</p>
+<p>Conformance to the Lite Profile compliance point does not entail support for
+the Software, Licensing, Security, Dataset, AI, Build, or Extension profiles
+of the SPDX.</p>
+<p>This compliance point facilitates interchange of minimal licensing information
+when produced by tools supporting SPDX.</p>
+<h2 id="extension-profile-compliance-point">Extension Profile compliance point <a name="5.11"></a></h2>
+<p>The Extension Profile captures extended tailored information when producing or
+consuming non-standard SPDX content in three ways:</p>
 <ul>
 <li>
-<p>Shall be in a human readable form.</p>
+<p>Support Profile-based extended characterization of Elements. Enables
+  specification and expression of Element characterization extensions within
+  any profile and namespace of SPDX without requiring changes to other profiles
+  or namespaces and without requiring local subclassing of remote classes
+  (which could inhibit ecosystem interoperability in some cases).</p>
 </li>
 <li>
-<p>Shall be in a syntax that a software tool can read and write.</p>
+<p>Support extension of SPDX by adopting individuals or communities with Element
+  characterization details uniquely specialized to their particular context.
+  Enables adopting individuals or communities to utilize SPDX expressive
+  capabilities along with expressing more arcane Element characterization
+  details specific to them and not appropriate for standardization across SPDX.</p>
 </li>
 <li>
-<p>Shall be suitable to be checked for syntactic correctness automatically, independent of how it was generated (human or tool).</p>
-</li>
-<li>
-<p>The SPDX document character set shall support UTF-8 encoding.</p>
-</li>
-<li>
-<p>Multiple serialization formats may be used to represent the information being exchanged. Current supported formats include:</p>
-<ul>
-<li><strong>YAML 1.2</strong> see: <a href="https://yaml.org/spec/1.2/spec.html">https://yaml.org/spec/1.2/spec.html</a></li>
-<li><strong>JavaScript Object Notation</strong> (JSON) see: <a href="https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf">ECMA-404</a><ul>
-<li>The JSON Schema for SPDX can be found in the <a href="https://github.com/spdx/spdx-spec/blob/master/schemas/spdx-schema.json">SPDX Spec Git Repository Schema directory</a></li>
-</ul>
-</li>
-<li><strong>Resource Description Framework</strong> (RDF also referred to as RDF/XML) see: <a href="https://www.w3.org/TR/rdf-syntax-grammar/">https://www.w3.org/TR/rdf-syntax-grammar/</a></li>
-<li><strong>tag:value</strong> flat text file as described in this specification</li>
-<li><strong>.xls</strong> spreadsheets</li>
-</ul>
-</li>
-<li>
-<p>In addition to the supported formats, the following format is in development with a plan to complete the specification in the next release:</p>
-<ul>
-<li><strong>Extensible Markup Language</strong> (XML) see: <a href="https://www.w3.org/TR/2008/REC-xml-20081126/">https://www.w3.org/TR/2008/REC-xml-20081126/</a></li>
-</ul>
-</li>
-<li>
-<p>Interoperability between all the supported file formats shall be preserved. SPDX defines how to validate a document in each supported format, and how to translate a valid document without loss to each other supported format.</p>
-</li>
-<li>
-<p>Tags and format properties are case sensitive.</p>
-</li>
-<li>
-<p>Should be easy to recognize in a file system without opening the file. A suggested naming convention is:</p>
+<p>Support structured capture of expressive solutions for gaps in SPDX coverage
+  from real-world use. Enables adopting individuals or communities to express
+  Element characterization details they require that are not currently defined
+  in SPDX but likely should be. Enables a practical pipeline that identifies
+  gaps in SPDX that should be filled, expresses solutions to those gaps in a
+  way that allows the identifying adopters to use the extended solutions with
+  SPDX and does not conflict with current SPDX, can be clearly detected among
+  the SPDX content exchange ecosystem, provides a clear and structured
+  definition of gap solution that can be used as submission for revision to the
+  SPDX standard.</p>
 </li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Format</th>
-<th>Extension</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>tag:value</td>
-<td>*.spdx</td>
-</tr>
-<tr>
-<td>RDF</td>
-<td>*.spdx.rdf</td>
-</tr>
-<tr>
-<td>JSON</td>
-<td>*.spdx.json</td>
-</tr>
-<tr>
-<td>XML</td>
-<td>*.spdx.xml</td>
-</tr>
-<tr>
-<td>YAML</td>
-<td>*.spdx.yaml or *.spdx.yml</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>The convention in this specification is for the RDF examples to use <code>rdf:about="..."</code> to represent that a proper Uniform Resource Indicator (URI) should be present.</li>
-</ul>
-<h2 id="45-trademark-compliance">4.5 Trademark Compliance <a name="4.5"></a></h2>
-<p>To be designated an SPDX document, a file shall comply with the requirements of the SPDX Trademark License (See the <a href="https://spdx.dev/trademark/">SPDX Trademark Page</a>).</p>
-<p>The official copyright notice that shall be used with any verbatim reproduction and/or distribution of this SPDX Specification 2.3 is:</p>
-<blockquote>
-<p>"Official SPDX Specification 2.3 Copyright © 2010-2022 Linux Foundation and its Contributors. Licensed under the Creative Commons Attribution License 3.0 Unported. All other rights are expressly reserved."</p>
-</blockquote>
-<p>The official copyright notice that shall be used with any non-verbatim reproduction and/or distribution of this SPDX Specification 2.3, including without limitation any partial use or combining this SPDX Specification with another work, is:</p>
-<blockquote>
-<p>"This is not an official SPDX Specification. Portions herein have been reproduced from SPDX Specification 2.3 found at spdx.dev. These portions are Copyright © 2010-2022 Linux Foundation and its Contributors, and are licensed under the Creative Commons Attribution License 3.0 Unported by the Linux Foundation and its Contributors. All other rights are expressly reserved by Linux Foundation and its Contributors."</p>
-</blockquote>
-<h2 id="46-the-spdx-lite-profile">4.6 The SPDX Lite profile <a name="4.6"></a></h2>
-<p>Rather than conforming to this whole specification, an implementation may conform with SPDX Lite only, a profile that defines a subset of the SPDX specification. SPDX Lite aims at the balance between the SPDX standard and actual workflows in some industries. See <a href="../annexes/SPDX-Lite/">Annex G</a> for more information.</p>
+<p>Software that conforms to the SPDX specification at the Extension Profile
+compliance point shall be able to import and export serialized documents that
+conform with one of the SPDX serialization formats defined SPDX serialization
+formats, including the abstract Extension class serving as the base for all
+defined Extension subclasses.</p>
+<p>Conformance to the Extension Profile compliance point does not entail support
+for the Licensing, Security, Dataset, AI, Build, or profiles of the SPDX but
+is expected to be used in combination with the other profiles to extend them.</p>
+<p>This compliance point facilitates interchange of extended information that goes
+beyond the standard SPDX produced by tools supporting SPDX and is used between
+cooperating parties that understand the form of the extension and can produce
+and consume its non-standard content.</p>
+<h2 id="trademark-compliance">Trademark Compliance</h2>
+<p>To be designated an SPDX document, a file shall comply with the requirements of the SPDX Trademark
+License, as stated in the <a href="https://spdx.dev/trademark">the SPDX Trademark Page</a>.</p>
+<p>The official copyright notice that shall be used with any verbatim reproduction and/or distribution of
+this SPDX Specification 3.0.1 is:</p>
+<p>"Official SPDX® Specification 3.0.1 Copyright © 2010--2024 Linux Foundation and its Contributors.
+Licensed under the Community Specification License 1.0. All other rights are expressly reserved."</p>
+<p>The official copyright notice that shall be used with any non-verbatim reproduction and/or distribution
+of this SPDX Specification 3.0.1, including without limitation any partial use or combining this SPDX
+Specification with another work, is:</p>
+<p>"This is not an official SPDX Specification. Portions herein have been reproduced from SPDX®
+Specification 3.0.1 found at spdx.dev. These portions are Copyright © 2010--2024 Linux Foundation and
+its Contributors, and are licensed under the Community Specification License 1.0 by the
+Linux Foundation and its Contributors. All other rights are expressly reserved by Linux Foundation and
+its Contributors."</p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../terms-and-definitions/" class="btn btn-neutral float-left" title="4. Terms and definitions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../serializations/" class="btn btn-neutral float-right" title="6. Model and serializations">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>DRAFT version generated from d25ae89 (model) by 85e8d65 (parser)</p>
+      <p>SPDX v3.0.1 Copyright © 2010-2024, The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors.</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -943,7 +1082,15 @@ Information technology — SPDX® Specification V2.2.1</a>, and includes new fie
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+        <span>
+          <a href="https://github.com/spdx/spdx-spec/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
     
+    
+      <span><a href="../terms-and-definitions/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../serializations/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
